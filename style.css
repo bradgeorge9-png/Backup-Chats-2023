@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff6b81, #ff4757);
+    color: white;
+    overflow: hidden;
+}
+
+.hidden { display: none; }
+
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.slideshow {
+    margin-top: 30px;
+    height: 300px;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 15px;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.question {
+    margin-top: 350px;
+    font-size: 32px;
+    text-shadow: 0 0 20px white;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes {
+    background: #2ed573;
+    color: white;
+}
+
+.no {
+    background: #ff4757;
+    color: white;
+    position: absolute;
+}

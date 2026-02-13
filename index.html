@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelly Valentine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="intro" id="intro">
+    <h1>Kelly...</h1>
+    <p>Something important...</p>
+    <button onclick="startExperience()">Continue</button>
+</div>
+
+<div class="main hidden" id="main">
+    <audio id="bgMusic" autoplay loop>
+        <source src="assets/music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="slideshow">
+        <img src="assets/photo1.jpg" class="slide active">
+        <img src="assets/photo2.jpg" class="slide">
+        <img src="assets/photo3.jpg" class="slide">
+    </div>
+
+    <h1 class="question">Will you be my Valentine?</h1>
+
+    <div class="buttons">
+        <button id="yesBtn" class="yes">YES ❤️</button>
+        <button id="noBtn" class="no">NO</button>
+    </div>
+
+    <canvas id="confetti"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
